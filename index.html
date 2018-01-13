@@ -20,11 +20,14 @@
             // JSX
             // const element = <div className="container">Hello World</div>
             // Using Props
-            const props = {
-                className: 'container',
-                children: 'Hello World!'
-            }
-            const element = <div {...props} />
+            // const props = {
+            //     className: 'container',
+            //     children: 'Hello World!'
+            // }
+            // const element = <div {...props} />
+            // JSX Component
+            const Message = props => <div>{props.children}</div>
+            const element = <Message>Hello World!<Message>GoodBye!</Message></Message>
             ReactDOM.render(element, rootElement);
         </script>
 </body>
