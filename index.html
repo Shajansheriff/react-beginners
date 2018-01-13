@@ -18,7 +18,13 @@
             //     children: 'Hell World!'
             // })
             // JSX
-            const element = <div className="container">Hello World</div>
+            // const element = <div className="container">Hello World</div>
+            // Using Props
+            const props = {
+                className: 'container',
+                children: 'Hello World!'
+            }
+            const element = <div {...props} />
             ReactDOM.render(element, rootElement);
         </script>
 </body>
